@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidyashriee | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-logo">VIDYASHRIEE</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-text">INITIALIZING PORTFOLIO...</div>
+  </div>
+  <canvas id="bg-canvas"></canvas>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">V.SHR</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><div class="toggle-knob" id="toggle-knob">🌙</div></button>
+        <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mobile-link">Home</a><a href="#about" class="mobile-link">About</a><a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a><a href="#education" class="mobile-link">Education</a><a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-greeting">// Hello, World! 👋</div>
+        <h1 class="hero-name"><span>VIDYA</span>SHRIEE</h1>
+        <div class="hero-tagline">&gt;&nbsp;<span id="typed-text"></span></div>
+        <p class="hero-desc">
+          A passionate tech enthusiast navigating the intersection of <span class="highlight">data</span>,
+          <span class="highlight-purple">finance</span>, and <span class="highlight-pink">technology</span> —
+          building analytical solutions and bringing ideas to life through code.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><span>⚡</span> View Projects</a>
+          <a href="#contact" class="btn btn-outline"><span>✉</span> Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <div class="profile-img"><div class="profile-img-placeholder">V</div></div>
+          <div class="corner-deco tl"></div><div class="corner-deco tr"></div><div class="corner-deco bl"></div><div class="corner-deco br"></div>
+        </div>
+        <div class="hex-badge">📊 Data Analytics</div><div class="hex-badge">🐍 Python</div><div class="hex-badge">💹 Finance</div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>SCROLL</span><div class="scroll-mouse"><div class="scroll-wheel"></div></div></div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="reveal"><div class="section-label">// 01. WHO AM I</div><h2 class="section-title">About Me</h2><div class="section-divider"></div></div>
+      <div class="about-grid">
+        <div class="about-card reveal reveal-delay-1">
+          <div class="about-text">
+            <p>Hi! I'm <span class="highlight">Vidyashriee</span> — a curious and driven student passionate about turning raw data into meaningful insights. I thrive at the crossroads of <span class="highlight-purple">technology</span> and <span class="highlight">analytics</span>.</p>
+            <p>My journey spans coding, financial analysis, and problem-solving. I love building things — whether it's a clean dashboard, a data model, or a web interface. I believe in <span class="highlight-pink">learning by doing</span> and constantly pushing my limits through real projects.</p>
+            <p>When I'm not writing code, I'm exploring the world of <span class="highlight-purple">finance</span>, reading about emerging tech, or sketching out solutions to everyday problems with data.</p>
+          </div>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label">Status</span><span class="info-value">🟢 Available</span></div>
+            <div class="info-item"><span class="info-label">Based In</span><span class="info-value">India 🇮🇳</span></div>
+            <div class="info-item"><span class="info-label">Focus</span><span class="info-value">Data Analytics</span></div>
+            <div class="info-item"><span class="info-label">Interests</span><span class="info-value">Tech + Finance</span></div>
+          </div>
+        </div>
+        <div class="stats-grid reveal reveal-delay-2">
+          <div class="stat-card"><div class="stat-number">5+</div><div class="stat-label">Projects Built</div></div>
+          <div class="stat-card"><div class="stat-number">3+</div><div class="stat-label">Tech Skills</div></div>
+          <div class="stat-card"><div class="stat-number">∞</div><div class="stat-label">Curiosity</div></div>
+          <div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Dedication</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="reveal"><div class="section-label">// 02. CAPABILITIES</div><h2 class="section-title">Skills & Expertise</h2><div class="section-divider"></div></div>
+      <div class="skills-grid">
+        <div class="skill-category cat-tech reveal reveal-delay-1">
+          <div class="skill-cat-title"><span class="cat-icon">⚡</span> Technical Skills</div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-blue" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">HTML</span><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-blue" data-width="90"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">CSS</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-blue" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">72%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-blue" data-width="72"></div></div></div>
+        </div>
+        <div class="skill-category cat-data reveal reveal-delay-2">
+          <div class="skill-cat-title" style="color: var(--neon-purple);"><span class="cat-icon">📊</span> Data & Analytics</div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Data Analysis</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Statistics</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Data Visualization</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" data-width="82"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">SQL</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" data-width="70"></div></div></div>
+        </div>
+        <div class="skill-category cat-other reveal reveal-delay-3">
+          <div class="skill-cat-title" style="color: var(--neon-green);"><span class="cat-icon">💹</span> Finance & Soft Skills</div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Finance</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-green" data-width="78"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Problem Solving</span><span class="skill-pct">92%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-green" data-width="92"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Research</span><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-green" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Communication</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fill-green" data-width="88"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="reveal"><div class="section-label">// 03. WORK</div><h2 class="section-title">Projects</h2><div class="section-divider"></div></div>
+      <div class="projects-grid">
+        <div class="project-card project-card-1 reveal reveal-delay-1">
+          <div class="project-number">01</div><div class="project-tag">Python · Data</div><h3 class="project-title">Sales Analytics Dashboard</h3>
+          <p class="project-desc">An end-to-end data analytics pipeline that processes raw sales data, performs statistical analysis, and generates visual dashboards with Python and Matplotlib.</p>
+          <div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">Matplotlib</span><span class="tech-pill">NumPy</span></div>
+          <div class="project-links"><a href="#" class="project-btn project-btn-primary">View Project</a><a href="#" class="project-btn project-btn-ghost">GitHub</a></div>
+        </div>
+        <div class="project-card project-card-2 reveal reveal-delay-2">
+          <div class="project-number" style="color: rgba(180,77,255,0.07);">02</div><div class="project-tag purple">Finance · Analysis</div><h3 class="project-title">Stock Portfolio Tracker</h3>
+          <p class="project-desc">A web-based tool that tracks stock portfolio performance, displays live price data, and calculates returns using financial formulas and real-time APIs.</p>
+          <div class="project-tech"><span class="tech-pill">JavaScript</span><span class="tech-pill">HTML/CSS</span><span class="tech-pill">Finance API</span></div>
+          <div class="project-links"><a href="#" class="project-btn project-btn-primary">View Project</a><a href="#" class="project-btn project-btn-ghost">GitHub</a></div>
+        </div>
+        <div class="project-card project-card-3 reveal reveal-delay-3">
+          <div class="project-number" style="color: rgba(255,45,155,0.07);">03</div><div class="project-tag pink">Web · Design</div><h3 class="project-title">Student Budget Planner</h3>
+          <p class="project-desc">An interactive budget planner built for students to track income, expenses, and savings goals with dynamic charts and category management.</p>
+          <div class="project-tech"><span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span></div>
+          <div class="project-links"><a href="#" class="project-btn project-btn-primary">View Project</a><a href="#" class="project-btn project-btn-ghost">GitHub</a></div>
+        </div>
+        <div class="project-card project-card-4 reveal reveal-delay-4">
+          <div class="project-number" style="color: rgba(57,255,20,0.06);">04</div><div class="project-tag green">ML · Python</div><h3 class="project-title">Customer Churn Predictor</h3>
+          <p class="project-desc">A machine learning model trained on customer behavior data to predict churn probability, helping businesses retain users before they leave.</p>
+          <div class="project-tech"><span class="tech-pill">Python</span><span class="tech-pill">scikit-learn</span><span class="tech-pill">Seaborn</span><span class="tech-pill">Pandas</span></div>
+          <div class="project-links"><a href="#" class="project-btn project-btn-primary">View Project</a><a href="#" class="project-btn project-btn-ghost">GitHub</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="reveal"><div class="section-label">// 04. BACKGROUND</div><h2 class="section-title">Education</h2><div class="section-divider"></div></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="edu-year">2022 — PRESENT</div><div class="edu-degree">Bachelor of Science — Computer Science</div><div class="edu-institution">University / Institution Name</div><div class="edu-desc">Pursuing a comprehensive degree covering algorithms, data structures, software engineering, and applied mathematics. Actively participating in data science clubs, hackathons, and analytics competitions.</div></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="edu-year">2023</div><div class="edu-degree">Data Analysis with Python — Certification</div><div class="edu-institution">Coursera / IBM</div><div class="edu-desc">Completed a professional certificate in data analysis covering Python, Pandas, NumPy, Matplotlib, and statistical analysis techniques applied to real-world datasets.</div></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="edu-year">2024</div><div class="edu-degree">Financial Markets — Online Course</div><div class="edu-institution">Yale University (Coursera)</div><div class="edu-desc">Studied the theory and mechanics of financial markets, behavioral finance, risk and return, and portfolio theory from one of the world's leading educators in economics.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="reveal"><div class="section-label">// 05. LET'S CONNECT</div><h2 class="section-title">Get In Touch</h2><div class="section-divider"></div></div>
+      <div class="contact-wrapper">
+        <div class="contact-info-card reveal reveal-delay-1">
+          <p class="contact-tagline">I'm always open to discussing new opportunities, collaborations, or just talking tech and data. Drop me a message!</p>
+          <div class="contact-links">
+            <a href="mailto:vidyashriee@email.com" class="contact-link"><div class="contact-link-icon icon-email">📧</div><span>vidyashriee@email.com</span></a>
+            <a href="#" class="contact-link"><div class="contact-link-icon icon-linkedin">💼</div><span>linkedin.com/in/vidyashriee</span></a>
+            <a href="#" class="contact-link"><div class="contact-link-icon icon-github">🐙</div><span>github.com/vidyashriee</span></a>
+            <a href="#" class="contact-link"><div class="contact-link-icon icon-twitter">🐦</div><span>@vidyashriee</span></a>
+          </div>
+        </div>
+        <div class="contact-form-card reveal reveal-delay-2">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="f-name">Your Name</label>
+              <input type="text" id="f-name" class="form-input" placeholder="Enter your name" />
+              <div class="form-error" id="err-name">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">Email Address</label>
+              <input type="email" id="f-email" class="form-input" placeholder="Enter your email" />
+              <div class="form-error" id="err-email">Please enter a valid email.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-msg">Message</label>
+              <textarea id="f-msg" class="form-textarea" placeholder="Tell me about your project or idea..."></textarea>
+              <div class="form-error" id="err-msg">Please enter a message.</div>
+            </div>
+            <button type="submit" class="btn-submit" id="submit-btn">SEND MESSAGE ✉</button>
+            <div id="cstat" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">VIDYASHRIEE</div>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="GitHub">🐙</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+          <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+          <a href="mailto:vidyashriee@email.com" class="social-icon" aria-label="Email">📧</a>
+        </div>
+        <p class="footer-copy">© 2026 <span>Vidyashriee</span>. All Rights Reserved. Built with ⚡ and 💜</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-top" aria-label="Back to top">↑</button>
+  <script src="/static/script.js"></script>
+</body>
+</html>

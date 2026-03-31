@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Portfolio Contacts</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #0b1220; color: #e6f2ff; }
+    h1 { margin: 0 0 8px; }
+    .meta { margin-bottom: 20px; color: #9ec4ff; }
+    table { width: 100%; border-collapse: collapse; background: #111a2b; }
+    th, td { border: 1px solid #2a3f63; padding: 10px; text-align: left; vertical-align: top; }
+    th { background: #16233b; }
+    tr:nth-child(even) { background: #0f1829; }
+    .empty { padding: 16px; background: #111a2b; border: 1px solid #2a3f63; }
+  </style>
+</head>
+<body>
+  <h1>Portfolio Admin</h1>
+  <div class="meta">Visitor count: <strong>{{ visitors }}</strong></div>
+
+  {% if contacts %}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in contacts %}
+      <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.email }}</td>
+        <td>{{ c.message }}</td>
+        <td>{{ c.created_at }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="empty">No contact messages yet.</div>
+  {% endif %}
+</body>
+</html>
+
